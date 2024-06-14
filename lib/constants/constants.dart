@@ -13,7 +13,5 @@ abstract class Constants {
   static const String english = 'en';
 
   static const String baseUrl = 'https://api.myanimelist.net/v2/anime';
-  static const String rankBaseUrl = '$baseUrl/ranking?';
-
   //////const Constants._();
 }

@@ -1,27 +1,24 @@
 import 'dart:convert';
 
 import 'package:anime_world_tutorial/config/app_config.dart';
-import 'package:anime_world_tutorial/models/anime.dart';
 import 'package:anime_world_tutorial/constants/constants.dart';
+import 'package:anime_world_tutorial/models/anime.dart';
+import 'package:anime_world_tutorial/models/anime_info.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-Future<Iterable<Anime>> getAnimeByRankingType(
-    {required String rankingType, required int limit}) async {
-  final rankUrl =
-      '${Constants.baseUrl}/ranking?ranking_type=$rankingType&limit=$limit';
+Future<Iterable<Anime>> getAnimeBySearch({required String query}) async {
+  final searchUrl = '${Constants.baseUrl}?q=$query&limit=10';
 
   final response = await http.get(
-    Uri.parse(rankUrl),
+    Uri.parse(searchUrl),
     headers: {'X-MAL-CLIENT-ID': clientId},
   );
 
   if (response.statusCode == 200) {
     final Map<String, dynamic> data = jsonDecode(response.body);
-    final List<dynamic> animeNodeList = data['data'];
-    final animes = animeNodeList
-        .where((animeNode) => animeNode['node']['main_picture'] != null)
-        .map((node) => Anime.fromJson(node));
+    AnimeInfo animeInfo = AnimeInfo.fromJson(data);
+    Iterable<Anime> animes = animeInfo.animes;
     return animes;
   } else {
     debugPrint('Error : ${response.statusCode}');
