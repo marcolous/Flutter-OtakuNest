@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 @immutable
-class Constants {
+abstract class Constants {
   // Theme Related
   static const String isDarkMode = 'is_dark_mode';
   static const String darkTheme = 'dark';
@@ -12,5 +12,8 @@ class Constants {
   static const String japanese = 'ja';
   static const String english = 'en';
 
-  const Constants._();
+  static const String baseUrl = 'https://api.myanimelist.net/v2/anime';
+  static const String rankBaseUrl = '$baseUrl/ranking?';
+
+  //////const Constants._();
 }
