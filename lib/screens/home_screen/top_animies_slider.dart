@@ -49,7 +49,7 @@ class _TopAnimiesSliderState extends State<TopAnimiesSlider> {
           ),
           const Gap(20),
           CustomDotsIndicator(
-            currentNotifier: currentNotifier,
+            currentIndex: currentIndex,
             widget: widget,
           ),
         ],

@@ -12,7 +12,7 @@ class TopAnimiesList extends StatelessWidget {
     return SizedBox(
       height: 300,
       child: FutureBuilder(
-        future: getAnimeByRankingType(rankingType: 'all', limit: 5),
+        future: getAnimeByRankingType(rankingType: 'all', limit: 7),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Loader();
