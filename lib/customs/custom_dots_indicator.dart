@@ -1,4 +1,4 @@
-import 'package:anime_world_tutorial/screens/home_screen/top_animes_slider.dart';
+import 'package:anime_world_tutorial/screens/home_screen/top_anime_slider/top_animes_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -26,6 +26,7 @@ class CustomDotsIndicator extends StatelessWidget {
         dotHeight: 10,
         dotWidth: 10,
         activeDotColor: Colors.red,
+        dotColor: Colors.white,
       ),
     );
   }

@@ -1,10 +1,10 @@
 name: anime_world_tutorial
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
+  sdk: ">=3.2.6 <4.0.0"
 
 dependencies:
   cached_network_image: ^3.3.1
@@ -27,3 +27,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: anime
+      fonts:
+        - asset: assets/fonts/anime-ace.regular.ttf
+
+    - family: Jujutsu
+      fonts:
+        - asset: assets/fonts/Jujutsu Kaisen.ttf
+
+    - family: manga
+      fonts:
+        - asset: assets/fonts/manga-temple.regular.ttf

@@ -1,6 +1,6 @@
 import 'package:anime_world_tutorial/customs/custom_dots_indicator.dart';
 import 'package:anime_world_tutorial/models/anime.dart';
-import 'package:anime_world_tutorial/screens/home_screen/top_anime_element.dart';
+import 'package:anime_world_tutorial/screens/home_screen/top_anime_slider/top_anime_element.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
