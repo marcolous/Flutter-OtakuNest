@@ -5,15 +5,15 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class TopAnimiesSlider extends StatefulWidget {
-  const TopAnimiesSlider({super.key, required this.animes});
+class TopAnimesSlider extends StatefulWidget {
+  const TopAnimesSlider({super.key, required this.animes});
   final Iterable<Anime> animes;
 
   @override
-  State<TopAnimiesSlider> createState() => _TopAnimiesSliderState();
+  State<TopAnimesSlider> createState() => _TopAnimesSliderState();
 }
 
-class _TopAnimiesSliderState extends State<TopAnimiesSlider> {
+class _TopAnimesSliderState extends State<TopAnimesSlider> {
   int currentIndex = 0;
   final CarouselController controller = CarouselController();
   final ValueNotifier<int> currentNotifier = ValueNotifier<int>(0);

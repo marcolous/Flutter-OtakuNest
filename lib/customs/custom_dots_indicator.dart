@@ -1,4 +1,4 @@
-import 'package:anime_world_tutorial/screens/home_screen/top_animies_slider.dart';
+import 'package:anime_world_tutorial/screens/home_screen/top_animes_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -10,7 +10,7 @@ class CustomDotsIndicator extends StatelessWidget {
   });
 
   final int currentIndex;
-  final TopAnimiesSlider widget;
+  final TopAnimesSlider widget;
 
   @override
   Widget build(BuildContext context) {
