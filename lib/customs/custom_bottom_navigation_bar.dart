@@ -27,9 +27,10 @@ class CustomBottomNavigationBar extends StatelessWidget {
 
         /// Search
         CrystalNavigationBarItem(
-            icon: IconlyBold.search,
-            unselectedIcon: IconlyLight.search,
-            selectedColor: Colors.white),
+          icon: IconlyBold.search,
+          unselectedIcon: IconlyLight.search,
+          selectedColor: Colors.white,
+        ),
 
         /// Favourite
         CrystalNavigationBarItem(

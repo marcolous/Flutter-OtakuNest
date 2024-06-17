@@ -1,3 +1,4 @@
+import 'package:anime_world_tutorial/config/theme/app_theme.dart';
 import 'package:anime_world_tutorial/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,11 @@ class OtakuNest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: AppTheme.darkTheme,
+      darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       extendBody: true,
       body: const HomeScreenBody(),
       bottomNavigationBar: CustomBottomNavigationBar(

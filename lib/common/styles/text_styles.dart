@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class TextStyles {
   static const styles12 = TextStyle(
     fontSize: 12,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
     fontFamily: 'anime',
     color: Colors.white,
   );
