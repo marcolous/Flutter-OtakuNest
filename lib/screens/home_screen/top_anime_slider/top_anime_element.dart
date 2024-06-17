@@ -1,4 +1,5 @@
 import 'package:anime_world_tutorial/models/anime.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class TopAnimeElement extends StatelessWidget {
@@ -13,8 +14,8 @@ class TopAnimeElement extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         child: AspectRatio(
           aspectRatio: 16 / 9,
-          child: Image.network(
-            anime.node.mainPicture.medium,
+          child: CachedNetworkImage(
+            imageUrl: anime.node.mainPicture.medium,
             fit: BoxFit.cover,
           ),
         ),

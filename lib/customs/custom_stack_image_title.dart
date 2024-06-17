@@ -18,7 +18,7 @@ class CustomStackImageTitle extends StatelessWidget {
       child: AspectRatio(
         aspectRatio: 9 / 17,
         child: Container(
-          color: Colors.white,
+          color: Colors.red,
           child: Stack(
             children: [
               CustomImagePreviewer(animes: animes),

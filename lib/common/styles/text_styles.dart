@@ -6,6 +6,7 @@ class TextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w400,
     fontFamily: 'anime',
+    color: Colors.white,
   );
 
   static const styles14medium = TextStyle(
