@@ -3,7 +3,7 @@ import 'package:anime_world_tutorial/core/screens/error_screen.dart';
 import 'package:anime_world_tutorial/core/widgets/loader.dart';
 import 'package:anime_world_tutorial/customs/custom_h_list_view.dart';
 import 'package:anime_world_tutorial/customs/custom_title_row.dart';
-import 'package:anime_world_tutorial/screens/ranking_type/view_all_animes_screen.dart';
+import 'package:anime_world_tutorial/screens/view_all_screen/view_all_animes_screen.dart';
 import 'package:flutter/material.dart';
 
 class TopRankedAnimes extends StatelessWidget {

@@ -1,16 +1,16 @@
-import 'package:anime_world_tutorial/customs/custom_h_list_view_item_title.dart';
-import 'package:anime_world_tutorial/customs/custom_image_previewer.dart';
-import 'package:anime_world_tutorial/models/anime.dart';
+import 'package:anime_world_tutorial/models/anime_node.dart';
+import 'package:anime_world_tutorial/screens/anime_details_screen/similar_anime_views_widgets/similar_h_laist_view_item_title.dart';
+import 'package:anime_world_tutorial/screens/anime_details_screen/similar_anime_views_widgets/similar_image_previewer.dart';
 import 'package:flutter/material.dart';
 
-class CustomStackImageTitle extends StatelessWidget {
-  const CustomStackImageTitle({
+class SimilarStackImageTitle extends StatelessWidget {
+  const SimilarStackImageTitle({
     super.key,
     required this.animes,
     required this.onTap,
   });
   final Function() onTap;
-  final Anime animes;
+  final AnimeNode animes;
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,8 @@ class CustomStackImageTitle extends StatelessWidget {
             color: Colors.red,
             child: Stack(
               children: [
-                CustomImagePreviewer(animes: animes),
-                CustomHListViewItemTitle(animes: animes)
+                SimilarImagePreviewer(animes: animes),
+                SimilarHListViewItemTitle(animes: animes)
               ],
             ),
           ),

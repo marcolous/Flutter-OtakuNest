@@ -26,9 +26,11 @@ class _TopAnimesSliderState extends State<TopAnimesSlider> {
         mainAxisSize: MainAxisSize.min,
         children: [
           CarouselSlider.builder(
+            //disableGesture: true,
             carouselController: controller,
             itemCount: widget.animes.length,
             options: CarouselOptions(
+              
               enlargeFactor: .22,
               aspectRatio: 16 / 9,
               viewportFraction: .88,

@@ -2,6 +2,19 @@ import 'package:flutter/material.dart';
 
 @immutable
 class TextStyles {
+  static const styles10 = TextStyle(
+    fontSize: 9,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'anime',
+    color: Colors.white,
+  );
+
+  static const styles12Light = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w300,
+    fontFamily: 'anime',
+    color: Colors.white,
+  );
   static const styles12 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
@@ -20,7 +33,7 @@ class TextStyles {
   static final styles15 = TextStyle(
     fontSize: 15,
     fontWeight: FontWeight.w400,
-    color: Colors.white.withOpacity(.9),
+    color: Colors.white.withOpacity(.7),
     fontFamily: 'anime',
   );
 

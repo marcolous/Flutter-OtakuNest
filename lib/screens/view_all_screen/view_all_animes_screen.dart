@@ -2,6 +2,7 @@ import 'package:anime_world_tutorial/api/get_anime_by_ranking_type.dart';
 import 'package:anime_world_tutorial/core/screens/error_screen.dart';
 import 'package:anime_world_tutorial/core/widgets/loader.dart';
 import 'package:anime_world_tutorial/customs/custom_stack_image_title.dart';
+import 'package:anime_world_tutorial/screens/anime_details_screen/anime_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class ViewAllAnimesScreen extends StatelessWidget {
@@ -32,7 +33,16 @@ class ViewAllAnimesScreen extends StatelessWidget {
                 itemCount: itemsCount,
                 gridDelegate: customSliverGridDelegate(),
                 itemBuilder: (context, index) {
-                  return CustomStackImageTitle(animes: animes[index]);
+                  return CustomStackImageTitle(
+                    animes: animes[index],
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => AnimeDetailsScreen(
+                          id: animes[index].node.id.toString(),
+                        ),
+                      ),
+                    ),
+                  );
                 },
               );
             }
