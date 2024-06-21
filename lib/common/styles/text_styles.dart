@@ -43,6 +43,12 @@ class TextStyles {
     fontWeight: FontWeight.w500,
     fontFamily: 'anime',
   );
+  static const styles18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'anime',
+    letterSpacing: 1,
+  );
 
   // Large Text
   static const styles20 = TextStyle(
