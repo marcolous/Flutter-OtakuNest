@@ -10,7 +10,6 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CrystalNavigationBar(
-      
       splashColor: Colors.transparent,
       currentIndex: currentIndex,
       height: 10,

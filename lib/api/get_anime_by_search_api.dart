@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 Future<Iterable<Anime>> getAnimeBySearch({required String query}) async {
-  final searchUrl = '${Constants.baseUrl}?q=$query&limit=10';
+  final searchUrl = '${Constants.baseUrl}?q=$query&limit=100';
 
   final response = await http.get(
     Uri.parse(searchUrl),

@@ -40,7 +40,7 @@ class TextStyles {
   // Medium Text
   static const styles16 = TextStyle(
     fontSize: 16,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w700,
     fontFamily: 'anime',
   );
   static const styles18 = TextStyle(
