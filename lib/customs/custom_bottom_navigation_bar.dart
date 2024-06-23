@@ -9,43 +9,39 @@ class CustomBottomNavigationBar extends StatelessWidget {
   final int currentIndex;
   @override
   Widget build(BuildContext context) {
-    return CrystalNavigationBar(
-      splashColor: Colors.transparent,
-      currentIndex: currentIndex,
-      height: 10,
-      //indicatorColor: Colors.blue,
-      unselectedItemColor: Colors.white70,
-      backgroundColor: Colors.white.withOpacity(0.1),
-      onTap: onTap,
-      items: [
-        /// Home
-        CrystalNavigationBarItem(
-          icon: IconlyBold.home,
-          unselectedIcon: IconlyLight.home,
-          selectedColor: Colors.white,
-        ),
+    return Container(
+      margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.sizeOf(context).width * 0.1),
+      child: CrystalNavigationBar(
+        splashColor: Colors.transparent,
+        currentIndex: currentIndex,
+        height: 10,
+        unselectedItemColor: Colors.white70,
+        backgroundColor: Colors.white.withOpacity(0.1),
+        onTap: onTap,
+        items: [
+          /// Home
+          CrystalNavigationBarItem(
+            icon: IconlyBold.home,
+            unselectedIcon: IconlyLight.home,
+            selectedColor: Colors.white,
+          ),
 
-        /// Search
-        CrystalNavigationBarItem(
-          icon: IconlyBold.search,
-          unselectedIcon: IconlyLight.search,
-          selectedColor: Colors.white,
-        ),
+          /// Search
+          CrystalNavigationBarItem(
+            icon: IconlyBold.search,
+            unselectedIcon: IconlyLight.search,
+            selectedColor: Colors.white,
+          ),
 
-        /// Favourite
-        CrystalNavigationBarItem(
-          icon: IconlyBold.category,
-          unselectedIcon: IconlyLight.category,
-          selectedColor: Colors.white,
-        ),
-
-        /// Add
-        // CrystalNavigationBarItem(
-        //   icon: IconlyBold.setting,
-        //   unselectedIcon: IconlyLight.setting,
-        //   selectedColor: Colors.white,
-        // ),
-      ],
+          /// Categories
+          CrystalNavigationBarItem(
+            icon: IconlyBold.category,
+            unselectedIcon: IconlyLight.category,
+            selectedColor: Colors.white,
+          ),
+        ],
+      ),
     );
   }
 }
