@@ -1,8 +1,9 @@
-import 'dart:ui';
-import 'package:anime_world_tutorial/common/styles/text_styles.dart';
 import 'package:anime_world_tutorial/models/anime.dart';
 import 'package:anime_world_tutorial/screens/anime_details_screen/anime_details_screen.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:anime_world_tutorial/screens/search_screen/widgets/background_blur.dart';
+import 'package:anime_world_tutorial/screens/search_screen/widgets/background_image.dart';
+import 'package:anime_world_tutorial/screens/search_screen/widgets/search_anime_item_image.dart';
+import 'package:anime_world_tutorial/screens/search_screen/widgets/search_anime_item_title.dart';
 import 'package:flutter/material.dart';
 
 class SearchAnimeItem extends StatelessWidget {
@@ -24,44 +25,13 @@ class SearchAnimeItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           child: Row(
             children: [
-              SizedBox(
-                width: 100,
-                height: 100,
-                child: CachedNetworkImage(
-                  imageUrl: anime.node.mainPicture.large,
-                  fit: BoxFit.cover,
-                ),
-              ),
+              SearchAnimeItemImage(anime: anime),
               Expanded(
                 child: Stack(
                   children: [
-                    SizedBox(
-                      height: 100,
-                      width: 300,
-                      child: CachedNetworkImage(
-                        imageUrl: anime.node.mainPicture.large,
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
-                    Positioned(
-                      left: 10000,
-                      child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                        child: Container(color: Colors.black),
-                      ),
-                    ),
-                    Positioned(
-                      top: 40,
-                      left: 10,
-                      right: 0,
-                      child: Text(
-                        anime.node.title,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyles.styles16.copyWith(
-                            color: isDark ? Colors.black : Colors.white),
-                      ),
-                    ),
+                    BackGroundImage(anime: anime),
+                    const BackGroundBlur(),
+                    SearchAnimeItemTitle(anime: anime, isDark: isDark),
                   ],
                 ),
               ),
@@ -72,3 +42,11 @@ class SearchAnimeItem extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
