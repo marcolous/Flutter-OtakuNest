@@ -1,4 +1,5 @@
 import 'package:anime_world_tutorial/customs/custom_bottom_navigation_bar.dart';
+import 'package:anime_world_tutorial/screens/categories_screen/categories_screen.dart';
 import 'package:anime_world_tutorial/screens/home_screen/home_screen_body.dart';
 import 'package:anime_world_tutorial/screens/search_screen/search_screen.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var _selectedTab = _SelectedTab.home;
-  int currentIndex = 1;
+  int currentIndex = 2;
   void _handleIndexChanged(int i) {
     setState(() {
       _selectedTab = _SelectedTab.values[i];
@@ -24,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final screens = const [
     HomeScreenBody(),
     SearchScreen(),
+    CategoriesScreen(),
   ];
 
   @override
@@ -38,8 +40,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-
-
-
