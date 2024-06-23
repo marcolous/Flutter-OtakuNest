@@ -4,7 +4,6 @@ import 'package:anime_world_tutorial/screens/home_screen/home_screen_body.dart';
 import 'package:anime_world_tutorial/screens/search_screen/search_screen.dart';
 import 'package:flutter/material.dart';
 
-enum _SelectedTab { home, search, categories, settings }
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,11 +13,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  var _selectedTab = _SelectedTab.home;
-  int currentIndex = 2;
+  int currentIndex = 0;
   void _handleIndexChanged(int i) {
     setState(() {
-      _selectedTab = _SelectedTab.values[i];
+      currentIndex = i;
     });
   }
 
@@ -34,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
       extendBody: true,
       body: screens[currentIndex],
       bottomNavigationBar: CustomBottomNavigationBar(
-        currentIndex: _SelectedTab.values.indexOf(_selectedTab),
+        currentIndex: currentIndex, 
         onTap: _handleIndexChanged,
       ),
     );

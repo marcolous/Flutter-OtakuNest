@@ -40,11 +40,11 @@ class CustomBottomNavigationBar extends StatelessWidget {
         ),
 
         /// Add
-        CrystalNavigationBarItem(
-          icon: IconlyBold.setting,
-          unselectedIcon: IconlyLight.setting,
-          selectedColor: Colors.white,
-        ),
+        // CrystalNavigationBarItem(
+        //   icon: IconlyBold.setting,
+        //   unselectedIcon: IconlyLight.setting,
+        //   selectedColor: Colors.white,
+        // ),
       ],
     );
   }
