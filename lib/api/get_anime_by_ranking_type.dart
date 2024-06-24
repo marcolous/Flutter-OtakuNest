@@ -8,11 +8,11 @@ import 'package:http/http.dart' as http;
 
 Future<Iterable<Anime>> getAnimeByRankingType(
     {required String rankingType, required int limit}) async {
-  final rankUrl =
+  final endPoint =
       '${Constants.baseUrl}/ranking?ranking_type=$rankingType&limit=$limit';
 
   final response = await http.get(
-    Uri.parse(rankUrl),
+    Uri.parse(endPoint),
     headers: {'X-MAL-CLIENT-ID': clientId},
   );
 

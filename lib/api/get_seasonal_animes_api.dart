@@ -11,10 +11,10 @@ import 'package:http/http.dart' as http;
 Future<Iterable<Anime>> getSeasonalAnime({required int limit}) async {
   final year = DateTime.now().year;
   final season = getCurrentSeason();
-  final seasonUrl = '${Constants.baseUrl}/season/$year/$season?limit=$limit';
+  final endPoint = '${Constants.baseUrl}/season/$year/$season?limit=$limit';
 
   final response = await http.get(
-    Uri.parse(seasonUrl),
+    Uri.parse(endPoint),
     headers: {'X-MAL-CLIENT-ID': clientId},
   );
 

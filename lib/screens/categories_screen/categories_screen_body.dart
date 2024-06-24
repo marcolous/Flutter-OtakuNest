@@ -1,4 +1,4 @@
-import 'package:anime_world_tutorial/screens/categories_screen/categories_Screen_grid_view.dart';
+import 'package:anime_world_tutorial/screens/categories_screen/categories_screen_grid_view.dart';
 import 'package:anime_world_tutorial/screens/categories_screen/categories_screen_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
