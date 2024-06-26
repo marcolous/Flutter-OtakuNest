@@ -23,29 +23,27 @@ class CategoriesScreenGridView extends StatelessWidget {
         }
         if (snapshot.hasData) {
           final animes = snapshot.data!.toList();
-          return Expanded(
-            child: GridView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              itemCount: animes.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                childAspectRatio: 9 / 17,
-                crossAxisSpacing: 5,
-                mainAxisSpacing: 5,
-              ),
-              itemBuilder: (context, index) => CustomStackImageTitle(
-                animes: animes[index],
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => AnimeDetailsScreen(
-                        id: animes[index].node.id.toString(),
-                      ),
+          return GridView.builder(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            itemCount: animes.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              childAspectRatio: 9 / 17,
+              crossAxisSpacing: 5,
+              mainAxisSpacing: 5,
+            ),
+            itemBuilder: (context, index) => CustomStackImageTitle(
+              animes: animes[index],
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => AnimeDetailsScreen(
+                      id: animes[index].node.id.toString(),
                     ),
-                  );
-                },
-              ),
+                  ),
+                );
+              },
             ),
           );
         }

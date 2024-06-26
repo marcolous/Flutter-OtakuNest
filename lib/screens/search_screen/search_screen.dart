@@ -30,38 +30,36 @@ class _SearchScreenState extends State<SearchScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            Expanded(
-              child: _searchResults == null
-                  ? Center(
-                      child: Text(
-                      'Search for an anime...',
-                      style: TextStyles.styles15,
-                    ))
-                  : FutureBuilder<Iterable<Anime>>(
-                      future: _searchResults,
-                      builder: (context, snapshot) {
-                        if (snapshot.connectionState ==
-                            ConnectionState.waiting) {
-                          return const Center(
-                            child: CircularProgressIndicator(),
-                          );
-                        } else if (snapshot.hasError) {
-                          return Center(
-                            child: Text(
-                              'Can\'t fine an anime',
-                              style: TextStyles.styles15,
-                            ),
-                          );
-                        } else {
-                          final animes = snapshot.data ?? [];
-                          return SearchResultsView(
-                            animes: animes,
-                            isDark: isDark,
-                          );
-                        }
-                      },
-                    ),
-            ),
+            _searchResults == null
+                ? Center(
+                    child: Text(
+                    'Search for an anime...',
+                    style: TextStyles.styles15,
+                  ))
+                : FutureBuilder<Iterable<Anime>>(
+                    future: _searchResults,
+                    builder: (context, snapshot) {
+                      if (snapshot.connectionState ==
+                          ConnectionState.waiting) {
+                        return const Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      } else if (snapshot.hasError) {
+                        return Center(
+                          child: Text(
+                            'Can\'t fine an anime',
+                            style: TextStyles.styles15,
+                          ),
+                        );
+                      } else {
+                        final animes = snapshot.data ?? [];
+                        return SearchResultsView(
+                          animes: animes,
+                          isDark: isDark,
+                        );
+                      }
+                    },
+                  ),
             Padding(
               padding: const EdgeInsets.only(top: 100, right: 15, left: 15),
               child: Align(
