@@ -29,17 +29,27 @@ OtakuNest is a Flutter app that provides a comprehensive anime experience. The a
 
 ## Screenshots
 
-### Home Screen
-![Home Screen](screenshots/home_screen.png)
 
-### Search Screen
-![Search Screen](screenshots/search_screen.png)
-
-### Categories Screen
-![Categories Screen](screenshots/categories_screen.png)
-
-### Anime Details
-![Anime Details](screenshots/anime_details.png)
+<div style="display: flex; flex-wrap: wrap;">
+    <div style="margin: 10px;">
+        <p>Home Screen</p>
+        <img src="screenshots/home1.png" alt="Home Screen" width="300"/>
+       <img src="screenshots/home2.png" alt="Home Screen" width="300"/>
+    </div>
+    <div style="margin: 10px;">
+       <p>Anime Details</p>
+        <img src="screenshots/details1.png" alt="Anime Details" width="300"/>
+       <img src="screenshots/details2.png" alt="Anime Details" width="300"/>
+    </div>
+    <div style="margin: 10px;">
+        <p>Search Screen</p>
+        <img src="screenshots/search.png" alt="Search Screen" width="300"/>
+    </div>
+    <div style="margin: 10px;">
+        <p>Categories Screen</p>
+        <img src="screenshots/categories.png" alt="Categories Screen" width="300"/>
+    </div>
+</div>
 
 ## Getting Started
 
@@ -53,7 +63,7 @@ Follow these instructions to get a copy of the project running on your local mac
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/OtakuNest.git
+   git clone https://github.com/marcolous/Flutter-OtakuNest.git
    ```
 2. Navigate to the project directory:
    ```bash
