@@ -14,7 +14,7 @@ class BackGroundImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 100,
-      width: 300,
+      width: double.infinity,
       child: CachedNetworkImage(
         imageUrl: anime.node.mainPicture.large,
         fit: BoxFit.fitWidth,

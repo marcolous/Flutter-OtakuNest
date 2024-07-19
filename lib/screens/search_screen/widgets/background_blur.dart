@@ -10,7 +10,7 @@ class BackGroundBlur extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      left: 10000,
+      left: 1000,
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
         child: Container(color: Colors.black),
