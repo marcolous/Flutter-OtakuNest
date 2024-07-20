@@ -1,4 +1,3 @@
-
 # OtakuNest
 
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev/)
@@ -14,40 +13,38 @@ OtakuNest is a Flutter app that provides a comprehensive anime experience. The a
 
 ## Packages Used
 
-- [anim_search_bar: ^2.0.3](https://pub.dev/packages/anim_search_bar)
-- [cached_network_image: ^3.3.1](https://pub.dev/packages/cached_network_image)
-- [carousel_slider: ^4.2.1](https://pub.dev/packages/carousel_slider)
-- [crystal_navigation_bar: ^1.0.0](https://pub.dev/packages/crystal_navigation_bar)
-- [flutter: sdk: flutter](https://flutter.dev/)
-- [flutter_bloc: ^8.1.3](https://pub.dev/packages/flutter_bloc)
-- [flutter_staggered_grid_view: ^0.7.0](https://pub.dev/packages/flutter_staggered_grid_view)
-- [gap: ^3.0.1](https://pub.dev/packages/gap)
-- [http: ^1.2.1](https://pub.dev/packages/http)
-- [iconly: ^1.0.1](https://pub.dev/packages/iconly)
-- [shared_preferences: ^2.2.2](https://pub.dev/packages/shared_preferences)
-- [smooth_page_indicator: ^1.1.0](https://pub.dev/packages/smooth_page_indicator)
+- `anim_search_bar`: ^2.0.3
+- `cached_network_image`: ^3.3.1
+- `carousel_slider`: ^4.2.1
+- `crystal_navigation_bar`: ^1.0.0
+- `flutter_bloc`: ^8.1.3
+- `flutter_staggered_grid_view`: ^0.7.0
+- `gap`: ^3.0.1
+- `http`: ^1.2.1
+- `iconly`: ^1.0.1
+- `shared_preferences`: ^2.2.2
+- `smooth_page_indicator`: ^1.1.0
 
 ## Screenshots
-
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="margin: 10px;">
         <p>Home Screen</p>
-        <img src="screenshots/home1.png" alt="Home Screen" width="300"/>
-       <img src="screenshots/home2.png" alt="Home Screen" width="300"/>
+        <img src="screenshots/home1.png" alt="Home Screen" width="250"/>
+       <img src="screenshots/home2.png" alt="Home Screen" width="250"/>
     </div>
     <div style="margin: 10px;">
        <p>Anime Details</p>
-        <img src="screenshots/details1.png" alt="Anime Details" width="300"/>
-       <img src="screenshots/details2.png" alt="Anime Details" width="300"/>
+        <img src="screenshots/details1.png" alt="Anime Details" width="250"/>
+       <img src="screenshots/details2.png" alt="Anime Details" width="250"/>
     </div>
     <div style="margin: 10px;">
         <p>Search Screen</p>
-        <img src="screenshots/search.png" alt="Search Screen" width="300"/>
+        <img src="screenshots/search.png" alt="Search Screen" width="250"/>
     </div>
     <div style="margin: 10px;">
         <p>Categories Screen</p>
-        <img src="screenshots/categories.png" alt="Categories Screen" width="300"/>
+        <img src="screenshots/categories.png" alt="Categories Screen" width="250"/>
     </div>
 </div>
 
